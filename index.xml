@@ -2,39 +2,30 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>我的一些记录总结</title>
-    <link>http://caodhuan.github.io/</link>
+    <link>https://github.com/caodhuan/caodhuan.github.io/</link>
     <description>Recent content on 我的一些记录总结</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 11 Aug 2022 20:24:14 +0800</lastBuildDate>
     
-	<atom:link href="http://caodhuan.github.io/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://github.com/caodhuan/caodhuan.github.io/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Vscode 环境搭建</title>
-      <link>http://caodhuan.github.io/post/vscode-%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/</link>
+      <link>https://github.com/caodhuan/caodhuan.github.io/post/vscode-%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/</link>
       <pubDate>Sun, 21 Aug 2022 16:22:01 +0800</pubDate>
       
-      <guid>http://caodhuan.github.io/post/vscode-%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/</guid>
+      <guid>https://github.com/caodhuan/caodhuan.github.io/post/vscode-%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/</guid>
       <description>安装的插件有  CMake Doxygen Documentation Generator One Dark Pro Material Icon Theme c/c++ Clang-Format  安装的字体  JetBrains Mono  </description>
     </item>
     
     <item>
-      <title>Second</title>
-      <link>http://caodhuan.github.io/post/second/</link>
-      <pubDate>Thu, 11 Aug 2022 21:34:39 +0800</pubDate>
-      
-      <guid>http://caodhuan.github.io/post/second/</guid>
-      <description>this is a second blog  first second  </description>
-    </item>
-    
-    <item>
       <title>About</title>
-      <link>http://caodhuan.github.io/about/</link>
+      <link>https://github.com/caodhuan/caodhuan.github.io/about/</link>
       <pubDate>Thu, 11 Aug 2022 20:24:14 +0800</pubDate>
       
-      <guid>http://caodhuan.github.io/about/</guid>
+      <guid>https://github.com/caodhuan/caodhuan.github.io/about/</guid>
       <description>一些记录文档</description>
     </item>
     
