@@ -6,10 +6,19 @@
     <description>Recent content in Posts on 我的一些记录总结</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 21 Aug 2022 16:22:01 +0800</lastBuildDate>
+    <lastBuildDate>Sun, 21 Aug 2022 17:16:21 +0800</lastBuildDate>
     
 	<atom:link href="http://caodhuan.github.io/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>服务端使用 Mono</title>
+      <link>http://caodhuan.github.io/post/mono/</link>
+      <pubDate>Sun, 21 Aug 2022 17:16:21 +0800</pubDate>
+      
+      <guid>http://caodhuan.github.io/post/mono/</guid>
+      <description>最近研究了一下Mono与C++的交互。</description>
+    </item>
     
     <item>
       <title>VScode 环境搭建</title>

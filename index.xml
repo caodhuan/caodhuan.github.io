@@ -12,6 +12,15 @@
     
     
     <item>
+      <title>服务端使用 Mono</title>
+      <link>http://caodhuan.github.io/post/mono/</link>
+      <pubDate>Sun, 21 Aug 2022 17:16:21 +0800</pubDate>
+      
+      <guid>http://caodhuan.github.io/post/mono/</guid>
+      <description>最近研究了一下Mono与C++的交互。</description>
+    </item>
+    
+    <item>
       <title>VScode 环境搭建</title>
       <link>http://caodhuan.github.io/post/vscode-%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/</link>
       <pubDate>Sun, 21 Aug 2022 16:22:01 +0800</pubDate>
