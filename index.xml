@@ -6,10 +6,15 @@
     <description>Recent content on 我的一些记录总结</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 11 Aug 2022 20:24:14 +0800</lastBuildDate>
-    
-	<atom:link href="http://caodhuan.github.io/index.xml" rel="self" type="application/rss+xml" />
-    
+    <lastBuildDate>Mon, 22 Aug 2022 17:03:29 +0800</lastBuildDate><atom:link href="http://caodhuan.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>关于 __FILE__ 宏</title>
+      <link>http://caodhuan.github.io/post/about_file_macro/</link>
+      <pubDate>Mon, 22 Aug 2022 17:03:29 +0800</pubDate>
+      
+      <guid>http://caodhuan.github.io/post/about_file_macro/</guid>
+      <description>__FILE__ 宏的文件名，是根据编译时输入的文件名。如果编译时输入相对目录文件名，那么这个宏展开的就是相对文件名，如果是绝对路径名，就是完整的路径名。CMake 默认是用完整的绝对路径。 </description>
+    </item>
     
     <item>
       <title>服务端使用 Mono</title>
@@ -17,7 +22,7 @@
       <pubDate>Sun, 21 Aug 2022 17:16:21 +0800</pubDate>
       
       <guid>http://caodhuan.github.io/post/mono/</guid>
-      <description>最近研究了一下Mono与C++的交互。</description>
+      <description></description>
     </item>
     
     <item>
