@@ -119,6 +119,41 @@
       
       <div class="blah w-100">
         <h1 class="f3 fw1 athelas mt0 lh-title">
+          <a href="/post/install_boost/" class="color-inherit dim link">
+            最新的 gcc boost 安装
+            </a>
+        </h1>
+        <div class="f6 f5-l lh-copy nested-copy-line-height nested-links">
+          gcc 源码下载 去 http://ftp.gnu.org/gnu/gcc/ 下载最新版本的源码。
+当前时间，最新的是 gcc-12.2.0 下载好了后运行以下脚本
+tar -xzf gcc-12.2.0.tar.gz &amp;&amp; cd gcc-12.2.0 解压完毕后，需要下载依赖
+contrib/download_prerequisites 一切准备完毕后，生成编译环境，然后开始编译安装
+./configure -disable-multilib make -j$(nproc --all) &amp;&amp; make install 然后重启机器，删除旧的版本。
+apt remove gcc g++ 查看当前版本
+gcc -v 参考这篇文档
+boost 源码下载 去 https://www.boost.org/ 下载对应版本的库。
+当前最新的版本是 boost_1_80_0 下载好了后运行以下脚本
+tar -xzf boost_1_80_0.tar.gz &amp;&amp; cd boost_1_80_0 ./bootstrap.sh 生成 b2，然后运行它
+./b2 -a &amp;&amp; ./b2 install 头文件会安装在 /usr/local/include 目录下 库文件会安装在 /usr/local/lib 目录下 查看版本，以及 lib 文件
+cat /usr/local/include/boost/version.hpp ll /usr/local/lib/libboost* 以上。
+        </div>
+          <a href="/post/install_boost/" class="ba b--moon-gray bg-light-gray br2 color-inherit dib f7 hover-bg-moon-gray link mt2 ph2 pv1">read more</a>
+        
+      </div>
+    </div>
+  </div>
+</article>
+
+          </div>
+        
+          <div class="relative w-100 mb4">
+            
+<article class="bb b--black-10">
+  <div class="db pv4 ph3 ph0-l no-underline dark-gray">
+    <div class="flex flex-column flex-row-ns">
+      
+      <div class="blah w-100">
+        <h1 class="f3 fw1 athelas mt0 lh-title">
           <a href="/post/about_file_macro/" class="color-inherit dim link">
             关于 __FILE__ 宏
             </a>
@@ -159,32 +194,25 @@
 
           </div>
         
-          <div class="relative w-100 mb4">
-            
-<article class="bb b--black-10">
-  <div class="db pv4 ph3 ph0-l no-underline dark-gray">
-    <div class="flex flex-column flex-row-ns">
-      
-      <div class="blah w-100">
-        <h1 class="f3 fw1 athelas mt0 lh-title">
-          <a href="/post/vscode-%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/" class="color-inherit dim link">
-            VScode 环境搭建
-            </a>
-        </h1>
-        <div class="f6 f5-l lh-copy nested-copy-line-height nested-links">
-          安装的插件有  CMake Doxygen Documentation Generator One Dark Pro Material Icon Theme c/c++ Clang-Format  安装的字体  JetBrains Mono  
-        </div>
-          <a href="/post/vscode-%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/" class="ba b--moon-gray bg-light-gray br2 color-inherit dib f7 hover-bg-moon-gray link mt2 ph2 pv1">read more</a>
-        
-      </div>
-    </div>
-  </div>
-</article>
-
-          </div>
-        
       </section>
 
+      
+      <section class="w-100">
+        <h1 class="f3">More</h1>
+        
+        
+          <h2 class="f5 fw4 mb4 dib mr3">
+            <a href="/post/vscode-%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/" class="link black dim">
+              VScode 环境搭建
+            </a>
+          </h2>
+        
+
+        
+        
+          <a href="/post/" class="link db f6 pa2 br3 bg-mid-gray white dim w4 tc">All Posts</a>
+        
+        </section>
       
 
       </div>

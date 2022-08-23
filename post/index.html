@@ -96,6 +96,36 @@
             <div class="mb3 pa4 mid-gray overflow-hidden">
     
       <div class="f6">
+        August 23, 2022
+      </div>
+    
+    <h1 class="f3 near-black">
+      <a href="/post/install_boost/" class="link black dim">
+        最新的 gcc boost 安装
+      </a>
+    </h1>
+    <div class="nested-links f5 lh-copy nested-copy-line-height">
+      gcc 源码下载 去 http://ftp.gnu.org/gnu/gcc/ 下载最新版本的源码。
+当前时间，最新的是 gcc-12.2.0 下载好了后运行以下脚本
+tar -xzf gcc-12.2.0.tar.gz &amp;&amp; cd gcc-12.2.0 解压完毕后，需要下载依赖
+contrib/download_prerequisites 一切准备完毕后，生成编译环境，然后开始编译安装
+./configure -disable-multilib make -j$(nproc --all) &amp;&amp; make install 然后重启机器，删除旧的版本。
+apt remove gcc g++ 查看当前版本
+gcc -v 参考这篇文档
+boost 源码下载 去 https://www.boost.org/ 下载对应版本的库。
+当前最新的版本是 boost_1_80_0 下载好了后运行以下脚本
+tar -xzf boost_1_80_0.tar.gz &amp;&amp; cd boost_1_80_0 ./bootstrap.sh 生成 b2，然后运行它
+./b2 -a &amp;&amp; ./b2 install 头文件会安装在 /usr/local/include 目录下 库文件会安装在 /usr/local/lib 目录下 查看版本，以及 lib 文件
+cat /usr/local/include/boost/version.hpp ll /usr/local/lib/libboost* 以上。
+    </div>
+  </div>
+
+        </div>
+      
+        <div class="relative w-100 w-30-l mb4 bg-white">
+            <div class="mb3 pa4 mid-gray overflow-hidden">
+    
+      <div class="f6">
         August 22, 2022
       </div>
     
@@ -143,7 +173,7 @@
       </a>
     </h1>
     <div class="nested-links f5 lh-copy nested-copy-line-height">
-      安装的插件有  CMake Doxygen Documentation Generator One Dark Pro Material Icon Theme c/c++ Clang-Format  安装的字体  JetBrains Mono  
+      安装的插件有  CMake Doxygen Documentation Generator One Dark Pro Material Icon Theme c/c++ Clang-Format  由于 c/c++ 插件的默认搜索路径少了 /usr/include，会出现错误提示。 所以需要手工添加一下这个配置。 安装的字体  JetBrains Mono  
     </div>
   </div>
 
