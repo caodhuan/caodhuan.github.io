@@ -106,7 +106,7 @@
     </h1>
     <div class="nested-links f5 lh-copy nested-copy-line-height">
       boost::asio::io_context::run() asio 的 io_context 实例，在哪个线程调用 run，就会只在那个线程运行， 不管是阻塞还是非阻塞操作。async_read、async_write、post 等等，都是在调用 run 的线程来回调。
-  The run() function blocks until all work has finished and there are no more handlers to be dispatched, or until the io_context has been stopped.
+ The run() function blocks until all work has finished and there are no more handlers to be dispatched, or until the io_context has been stopped.
 Multiple threads may call the run() function to set up a pool of threads from which the io_context may execute handlers. All threads that are waiting in the pool are equivalent and the io_context may choose any one of them to invoke a handler.
     </div>
   </div>

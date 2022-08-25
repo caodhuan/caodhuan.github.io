@@ -7,7 +7,7 @@
     <title>Boost asio系列——多线程 | 我的一些记录总结</title>
     <meta name="viewport" content="width=device-width,minimum-scale=1">
     <meta name="description" content="boost::asio::io_context::run() asio 的 io_context 实例，在哪个线程调用 run，就会只在那个线程运行， 不管是阻塞还是非阻塞操作。async_read、async_write、post 等等，都是在调用 run 的线程来回调。
-  The run() function blocks until all work has finished and there are no more handlers to be dispatched, or until the io_context has been stopped.
+ The run() function blocks until all work has finished and there are no more handlers to be dispatched, or until the io_context has been stopped.
 Multiple threads may call the run() function to set up a pool of threads from which the io_context may execute handlers. All threads that are waiting in the pool are equivalent and the io_context may choose any one of them to invoke a handler.">
     <meta name="generator" content="Hugo 0.92.2" />
     
@@ -33,7 +33,7 @@ Multiple threads may call the run() function to set up a pool of threads from wh
     
     <meta property="og:title" content="Boost asio系列——多线程" />
 <meta property="og:description" content="boost::asio::io_context::run() asio 的 io_context 实例，在哪个线程调用 run，就会只在那个线程运行， 不管是阻塞还是非阻塞操作。async_read、async_write、post 等等，都是在调用 run 的线程来回调。
-  The run() function blocks until all work has finished and there are no more handlers to be dispatched, or until the io_context has been stopped.
+ The run() function blocks until all work has finished and there are no more handlers to be dispatched, or until the io_context has been stopped.
 Multiple threads may call the run() function to set up a pool of threads from which the io_context may execute handlers. All threads that are waiting in the pool are equivalent and the io_context may choose any one of them to invoke a handler." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="http://caodhuan.github.io/post/boost_asio1/" /><meta property="article:section" content="post" />
@@ -42,14 +42,14 @@ Multiple threads may call the run() function to set up a pool of threads from wh
 
 <meta itemprop="name" content="Boost asio系列——多线程">
 <meta itemprop="description" content="boost::asio::io_context::run() asio 的 io_context 实例，在哪个线程调用 run，就会只在那个线程运行， 不管是阻塞还是非阻塞操作。async_read、async_write、post 等等，都是在调用 run 的线程来回调。
-  The run() function blocks until all work has finished and there are no more handlers to be dispatched, or until the io_context has been stopped.
+ The run() function blocks until all work has finished and there are no more handlers to be dispatched, or until the io_context has been stopped.
 Multiple threads may call the run() function to set up a pool of threads from which the io_context may execute handlers. All threads that are waiting in the pool are equivalent and the io_context may choose any one of them to invoke a handler."><meta itemprop="datePublished" content="2022-08-25T18:54:56+08:00" />
 <meta itemprop="dateModified" content="2022-08-25T18:54:56+08:00" />
 <meta itemprop="wordCount" content="82">
 <meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Boost asio系列——多线程"/>
 <meta name="twitter:description" content="boost::asio::io_context::run() asio 的 io_context 实例，在哪个线程调用 run，就会只在那个线程运行， 不管是阻塞还是非阻塞操作。async_read、async_write、post 等等，都是在调用 run 的线程来回调。
-  The run() function blocks until all work has finished and there are no more handlers to be dispatched, or until the io_context has been stopped.
+ The run() function blocks until all work has finished and there are no more handlers to be dispatched, or until the io_context has been stopped.
 Multiple threads may call the run() function to set up a pool of threads from which the io_context may execute handlers. All threads that are waiting in the pool are equivalent and the io_context may choose any one of them to invoke a handler."/>
 
 	
@@ -127,10 +127,8 @@ Multiple threads may call the run() function to set up a pool of threads from wh
 <p>asio 的 io_context 实例，在哪个线程调用 run，就会只在那个线程运行，
 不管是阻塞还是非阻塞操作。async_read、async_write、post 等等，都是在调用 run 的线程来回调。</p>
 <blockquote>
-<blockquote>
 <p><a href="https://www.boost.org/doc/libs/1_80_0/doc/html/boost_asio/reference/io_context/run/overload1.html">The run() function blocks until all work has finished and there are no more handlers to be dispatched, or until the io_context has been stopped.<br>
 Multiple threads may call the run() function to set up a pool of threads from which the io_context may execute handlers. All threads that are waiting in the pool are equivalent and the io_context may choose any one of them to invoke a handler.</a></p>
-</blockquote>
 </blockquote>
 <p>如果多个线程都调用了 run ，那么会随机选一个来回调。</p>
 <ul class="pa0">
