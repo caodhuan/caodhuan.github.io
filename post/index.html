@@ -96,6 +96,27 @@
             <div class="mb3 pa4 mid-gray overflow-hidden">
     
       <div class="f6">
+        August 25, 2022
+      </div>
+    
+    <h1 class="f3 near-black">
+      <a href="/post/boost_asio1/" class="link black dim">
+        Boost asio系列——多线程
+      </a>
+    </h1>
+    <div class="nested-links f5 lh-copy nested-copy-line-height">
+      boost::asio::io_context::run() asio 的 io_context 实例，在哪个线程调用 run，就会只在那个线程运行， 不管是阻塞还是非阻塞操作。async_read、async_write、post 等等，都是在调用 run 的线程来回调。
+  The run() function blocks until all work has finished and there are no more handlers to be dispatched, or until the io_context has been stopped.
+Multiple threads may call the run() function to set up a pool of threads from which the io_context may execute handlers. All threads that are waiting in the pool are equivalent and the io_context may choose any one of them to invoke a handler.
+    </div>
+  </div>
+
+        </div>
+      
+        <div class="relative w-100 w-30-l mb4 bg-white">
+            <div class="mb3 pa4 mid-gray overflow-hidden">
+    
+      <div class="f6">
         August 23, 2022
       </div>
     
