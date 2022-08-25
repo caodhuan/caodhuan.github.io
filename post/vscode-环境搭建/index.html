@@ -4,9 +4,21 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     
-    <title>VScode 环境搭建 | 我的一些记录总结</title>
+    <title>VScode c&#43;&#43; 环境搭建 | 我的一些记录总结</title>
     <meta name="viewport" content="width=device-width,minimum-scale=1">
-    <meta name="description" content="安装的插件有  CMake Doxygen Documentation Generator One Dark Pro Material Icon Theme c/c&#43;&#43; Clang-Format  由于 c/c&#43;&#43; 插件的默认搜索路径少了 /usr/include，会出现错误提示。 所以需要手工添加一下这个配置。 安装的字体  JetBrains Mono  ">
+    <meta name="description" content="安装的插件有   CMake
+现在习惯用 cmake 来搭建工程了
+  Doxygen Documentation Generator
+用来生成注释，在文件开头输入 /，再按回车健，即会生成文件头注释。 在函数的上方输入 /，会生成函数注释
+  One Dark Pro
+漂亮的主题
+  Material Icon Theme
+这图标，爱了爱了
+  c/c&#43;&#43;
+虽然 cpp-tools 进程会导致 cpu 占用高，但跳转功能真的是没法儿割舍
+由于 c/c&#43;&#43; 插件的默认搜索路径少了 /usr/include，会出现错误提示。 所以需要手工添加一下这个配置。   Clang-Format
+代码格式化，推荐 google 风格
+  安装的字体  JetBrains Mono  ">
     <meta name="generator" content="Hugo 0.92.2" />
     
     
@@ -29,20 +41,56 @@
 
     
     
-    <meta property="og:title" content="VScode 环境搭建" />
-<meta property="og:description" content="安装的插件有  CMake Doxygen Documentation Generator One Dark Pro Material Icon Theme c/c&#43;&#43; Clang-Format  由于 c/c&#43;&#43; 插件的默认搜索路径少了 /usr/include，会出现错误提示。 所以需要手工添加一下这个配置。 安装的字体  JetBrains Mono  " />
+    <meta property="og:title" content="VScode c&#43;&#43; 环境搭建" />
+<meta property="og:description" content="安装的插件有   CMake
+现在习惯用 cmake 来搭建工程了
+  Doxygen Documentation Generator
+用来生成注释，在文件开头输入 /，再按回车健，即会生成文件头注释。 在函数的上方输入 /，会生成函数注释
+  One Dark Pro
+漂亮的主题
+  Material Icon Theme
+这图标，爱了爱了
+  c/c&#43;&#43;
+虽然 cpp-tools 进程会导致 cpu 占用高，但跳转功能真的是没法儿割舍
+由于 c/c&#43;&#43; 插件的默认搜索路径少了 /usr/include，会出现错误提示。 所以需要手工添加一下这个配置。   Clang-Format
+代码格式化，推荐 google 风格
+  安装的字体  JetBrains Mono  " />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="http://caodhuan.github.io/post/vscode-%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/" /><meta property="article:section" content="post" />
 <meta property="article:published_time" content="2022-08-21T16:22:01+08:00" />
 <meta property="article:modified_time" content="2022-08-21T16:22:01+08:00" />
 
-<meta itemprop="name" content="VScode 环境搭建">
-<meta itemprop="description" content="安装的插件有  CMake Doxygen Documentation Generator One Dark Pro Material Icon Theme c/c&#43;&#43; Clang-Format  由于 c/c&#43;&#43; 插件的默认搜索路径少了 /usr/include，会出现错误提示。 所以需要手工添加一下这个配置。 安装的字体  JetBrains Mono  "><meta itemprop="datePublished" content="2022-08-21T16:22:01+08:00" />
+<meta itemprop="name" content="VScode c&#43;&#43; 环境搭建">
+<meta itemprop="description" content="安装的插件有   CMake
+现在习惯用 cmake 来搭建工程了
+  Doxygen Documentation Generator
+用来生成注释，在文件开头输入 /，再按回车健，即会生成文件头注释。 在函数的上方输入 /，会生成函数注释
+  One Dark Pro
+漂亮的主题
+  Material Icon Theme
+这图标，爱了爱了
+  c/c&#43;&#43;
+虽然 cpp-tools 进程会导致 cpu 占用高，但跳转功能真的是没法儿割舍
+由于 c/c&#43;&#43; 插件的默认搜索路径少了 /usr/include，会出现错误提示。 所以需要手工添加一下这个配置。   Clang-Format
+代码格式化，推荐 google 风格
+  安装的字体  JetBrains Mono  "><meta itemprop="datePublished" content="2022-08-21T16:22:01+08:00" />
 <meta itemprop="dateModified" content="2022-08-21T16:22:01+08:00" />
-<meta itemprop="wordCount" content="21">
+<meta itemprop="wordCount" content="38">
 <meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="VScode 环境搭建"/>
-<meta name="twitter:description" content="安装的插件有  CMake Doxygen Documentation Generator One Dark Pro Material Icon Theme c/c&#43;&#43; Clang-Format  由于 c/c&#43;&#43; 插件的默认搜索路径少了 /usr/include，会出现错误提示。 所以需要手工添加一下这个配置。 安装的字体  JetBrains Mono  "/>
+<meta name="twitter:title" content="VScode c&#43;&#43; 环境搭建"/>
+<meta name="twitter:description" content="安装的插件有   CMake
+现在习惯用 cmake 来搭建工程了
+  Doxygen Documentation Generator
+用来生成注释，在文件开头输入 /，再按回车健，即会生成文件头注释。 在函数的上方输入 /，会生成函数注释
+  One Dark Pro
+漂亮的主题
+  Material Icon Theme
+这图标，爱了爱了
+  c/c&#43;&#43;
+虽然 cpp-tools 进程会导致 cpu 占用高，但跳转功能真的是没法儿割舍
+由于 c/c&#43;&#43; 插件的默认搜索路径少了 /usr/include，会出现错误提示。 所以需要手工添加一下这个配置。   Clang-Format
+代码格式化，推荐 google 风格
+  安装的字体  JetBrains Mono  "/>
 
 	
   </head>
@@ -105,7 +153,7 @@
   </div>
 
 
-      <h1 class="f1 athelas mt3 mb1">VScode 环境搭建</h1>
+      <h1 class="f1 athelas mt3 mb1">VScode c&#43;&#43; 环境搭建</h1>
       
       
       
@@ -117,16 +165,35 @@
     </header>
     <div class="nested-copy-line-height lh-copy serif f4 nested-links mid-gray pr4-l w-two-thirds-l"><h2 id="安装的插件有">安装的插件有</h2>
 <ul>
-<li>CMake</li>
-<li>Doxygen Documentation Generator</li>
-<li>One Dark Pro</li>
-<li>Material Icon Theme</li>
-<li>c/c++</li>
-<li>Clang-Format</li>
-</ul>
-<p>由于 c/c++ 插件的默认搜索路径少了 /usr/include，会出现错误提示。
+<li>
+<p>CMake<br>
+现在习惯用 cmake 来搭建工程了</p>
+</li>
+<li>
+<p>Doxygen Documentation Generator<br>
+用来生成注释，在文件开头输入 /<strong>，再按回车健，即会生成文件头注释。
+在函数的上方输入 /</strong>，会生成函数注释</p>
+</li>
+<li>
+<p>One Dark Pro<br>
+漂亮的主题</p>
+</li>
+<li>
+<p>Material Icon Theme<br>
+这图标，爱了爱了</p>
+</li>
+<li>
+<p>c/c++<br>
+虽然 cpp-tools 进程会导致 cpu 占用高，但跳转功能真的是没法儿割舍<br>
+由于 c/c++ 插件的默认搜索路径少了 /usr/include，会出现错误提示。
 所以需要手工添加一下这个配置。
 <img src="../../images/vsc_path.png" alt="配置图"></p>
+</li>
+<li>
+<p>Clang-Format<br>
+代码格式化，推荐 google 风格</p>
+</li>
+</ul>
 <h2 id="安装的字体">安装的字体</h2>
 <ul>
 <li>JetBrains Mono</li>

@@ -57,12 +57,24 @@ cat /usr/local/include/boost/version.hpp ll /usr/local/lib/libboost* 以上。</
     </item>
     
     <item>
-      <title>VScode 环境搭建</title>
+      <title>VScode c&#43;&#43; 环境搭建</title>
       <link>http://caodhuan.github.io/post/vscode-%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/</link>
       <pubDate>Sun, 21 Aug 2022 16:22:01 +0800</pubDate>
       
       <guid>http://caodhuan.github.io/post/vscode-%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/</guid>
-      <description>安装的插件有  CMake Doxygen Documentation Generator One Dark Pro Material Icon Theme c/c++ Clang-Format  由于 c/c++ 插件的默认搜索路径少了 /usr/include，会出现错误提示。 所以需要手工添加一下这个配置。 安装的字体  JetBrains Mono  </description>
+      <description>安装的插件有   CMake
+现在习惯用 cmake 来搭建工程了
+  Doxygen Documentation Generator
+用来生成注释，在文件开头输入 /，再按回车健，即会生成文件头注释。 在函数的上方输入 /，会生成函数注释
+  One Dark Pro
+漂亮的主题
+  Material Icon Theme
+这图标，爱了爱了
+  c/c++
+虽然 cpp-tools 进程会导致 cpu 占用高，但跳转功能真的是没法儿割舍
+由于 c/c++ 插件的默认搜索路径少了 /usr/include，会出现错误提示。 所以需要手工添加一下这个配置。   Clang-Format
+代码格式化，推荐 google 风格
+  安装的字体  JetBrains Mono  </description>
     </item>
     
     <item>
