@@ -65,7 +65,7 @@ cat /usr/local/include/boost/version.hpp ll /usr/local/lib/libboost* 以上。</
       <description>安装的插件有   CMake
 现在习惯用 cmake 来搭建工程了
   Doxygen Documentation Generator
-用来生成注释，在文件开头输入 /，再按回车健，即会生成文件头注释。 在函数的上方输入 /，会生成函数注释
+用来生成注释，在文件开头输入 /**，再按回车健，即会生成文件头注释。 在函数的上方输入 /**，会生成函数注释
   One Dark Pro
 漂亮的主题
   Material Icon Theme
