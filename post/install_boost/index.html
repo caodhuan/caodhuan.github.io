@@ -13,12 +13,13 @@ contrib/download_prerequisites 一切准备完毕后，生成编译环境，然�
 ./configure -disable-multilib make -j$(nproc --all) &amp;&amp; make install 然后重启机器，删除旧的版本。
 apt remove gcc g&#43;&#43; 查看当前版本
 gcc -v 参考这篇文档
-boost 源码下载 去 https://www.boost.org/ 下载对应版本的库。
+如果出现以下错误
+: /lib/x86_64-linux-gnu/libstdc&#43;&#43;.so.6: version `GLIBCXX_3.4.29&#39; not found 请替换对应的 &ldquo;/lib/x86_64-linux-gnu/libstdc&#43;&#43;.so.6&rdquo; 文件，文件在 &ldquo;/usr/local/lib64/libstdc&#43;&#43;.so.6&rdquo;
+rm /lib/x86_64-linux-gnu/libstdc&#43;&#43;.so.6 ln -s /usr/local/lib64/libstdc&#43;&#43;.so.6 /lib/x86_64-linux-gnu/libstdc&#43;&#43;.so.6 boost 源码下载 去 https://www.boost.org/ 下载对应版本的库。
 当前最新的版本是 boost_1_80_0 下载好了后运行以下脚本
 tar -xzf boost_1_80_0.tar.gz &amp;&amp; cd boost_1_80_0 ./bootstrap.sh 生成 b2，然后运行它
-./b2 -a &amp;&amp; ./b2 install 头文件会安装在 /usr/local/include 目录下 库文件会安装在 /usr/local/lib 目录下 查看版本，以及 lib 文件
-cat /usr/local/include/boost/version.hpp ll /usr/local/lib/libboost* 以上。">
-    <meta name="generator" content="Hugo 0.92.2" />
+./b2 -a &amp;&amp; .">
+    <meta name="generator" content="Hugo 0.68.3" />
     
     
     
@@ -48,16 +49,16 @@ contrib/download_prerequisites 一切准备完毕后，生成编译环境，然�
 ./configure -disable-multilib make -j$(nproc --all) &amp;&amp; make install 然后重启机器，删除旧的版本。
 apt remove gcc g&#43;&#43; 查看当前版本
 gcc -v 参考这篇文档
-boost 源码下载 去 https://www.boost.org/ 下载对应版本的库。
+如果出现以下错误
+: /lib/x86_64-linux-gnu/libstdc&#43;&#43;.so.6: version `GLIBCXX_3.4.29&#39; not found 请替换对应的 &ldquo;/lib/x86_64-linux-gnu/libstdc&#43;&#43;.so.6&rdquo; 文件，文件在 &ldquo;/usr/local/lib64/libstdc&#43;&#43;.so.6&rdquo;
+rm /lib/x86_64-linux-gnu/libstdc&#43;&#43;.so.6 ln -s /usr/local/lib64/libstdc&#43;&#43;.so.6 /lib/x86_64-linux-gnu/libstdc&#43;&#43;.so.6 boost 源码下载 去 https://www.boost.org/ 下载对应版本的库。
 当前最新的版本是 boost_1_80_0 下载好了后运行以下脚本
 tar -xzf boost_1_80_0.tar.gz &amp;&amp; cd boost_1_80_0 ./bootstrap.sh 生成 b2，然后运行它
-./b2 -a &amp;&amp; ./b2 install 头文件会安装在 /usr/local/include 目录下 库文件会安装在 /usr/local/lib 目录下 查看版本，以及 lib 文件
-cat /usr/local/include/boost/version.hpp ll /usr/local/lib/libboost* 以上。" />
+./b2 -a &amp;&amp; ." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="http://caodhuan.github.io/post/install_boost/" /><meta property="article:section" content="post" />
+<meta property="og:url" content="http://caodhuan.github.io/post/install_boost/" />
 <meta property="article:published_time" content="2022-08-23T11:28:47+08:00" />
 <meta property="article:modified_time" content="2022-08-23T11:28:47+08:00" />
-
 <meta itemprop="name" content="最新的 gcc boost 安装">
 <meta itemprop="description" content="gcc 源码下载 去 http://ftp.gnu.org/gnu/gcc/ 下载最新版本的源码。
 当前时间，最新的是 gcc-12.2.0 下载好了后运行以下脚本
@@ -66,13 +67,18 @@ contrib/download_prerequisites 一切准备完毕后，生成编译环境，然�
 ./configure -disable-multilib make -j$(nproc --all) &amp;&amp; make install 然后重启机器，删除旧的版本。
 apt remove gcc g&#43;&#43; 查看当前版本
 gcc -v 参考这篇文档
-boost 源码下载 去 https://www.boost.org/ 下载对应版本的库。
+如果出现以下错误
+: /lib/x86_64-linux-gnu/libstdc&#43;&#43;.so.6: version `GLIBCXX_3.4.29&#39; not found 请替换对应的 &ldquo;/lib/x86_64-linux-gnu/libstdc&#43;&#43;.so.6&rdquo; 文件，文件在 &ldquo;/usr/local/lib64/libstdc&#43;&#43;.so.6&rdquo;
+rm /lib/x86_64-linux-gnu/libstdc&#43;&#43;.so.6 ln -s /usr/local/lib64/libstdc&#43;&#43;.so.6 /lib/x86_64-linux-gnu/libstdc&#43;&#43;.so.6 boost 源码下载 去 https://www.boost.org/ 下载对应版本的库。
 当前最新的版本是 boost_1_80_0 下载好了后运行以下脚本
 tar -xzf boost_1_80_0.tar.gz &amp;&amp; cd boost_1_80_0 ./bootstrap.sh 生成 b2，然后运行它
-./b2 -a &amp;&amp; ./b2 install 头文件会安装在 /usr/local/include 目录下 库文件会安装在 /usr/local/lib 目录下 查看版本，以及 lib 文件
-cat /usr/local/include/boost/version.hpp ll /usr/local/lib/libboost* 以上。"><meta itemprop="datePublished" content="2022-08-23T11:28:47+08:00" />
-<meta itemprop="dateModified" content="2022-08-23T11:28:47+08:00" />
-<meta itemprop="wordCount" content="70">
+./b2 -a &amp;&amp; .">
+<meta itemprop="datePublished" content="2022-08-23T11:28:47&#43;08:00" />
+<meta itemprop="dateModified" content="2022-08-23T11:28:47&#43;08:00" />
+<meta itemprop="wordCount" content="87">
+
+
+
 <meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="最新的 gcc boost 安装"/>
 <meta name="twitter:description" content="gcc 源码下载 去 http://ftp.gnu.org/gnu/gcc/ 下载最新版本的源码。
@@ -82,11 +88,12 @@ contrib/download_prerequisites 一切准备完毕后，生成编译环境，然�
 ./configure -disable-multilib make -j$(nproc --all) &amp;&amp; make install 然后重启机器，删除旧的版本。
 apt remove gcc g&#43;&#43; 查看当前版本
 gcc -v 参考这篇文档
-boost 源码下载 去 https://www.boost.org/ 下载对应版本的库。
+如果出现以下错误
+: /lib/x86_64-linux-gnu/libstdc&#43;&#43;.so.6: version `GLIBCXX_3.4.29&#39; not found 请替换对应的 &ldquo;/lib/x86_64-linux-gnu/libstdc&#43;&#43;.so.6&rdquo; 文件，文件在 &ldquo;/usr/local/lib64/libstdc&#43;&#43;.so.6&rdquo;
+rm /lib/x86_64-linux-gnu/libstdc&#43;&#43;.so.6 ln -s /usr/local/lib64/libstdc&#43;&#43;.so.6 /lib/x86_64-linux-gnu/libstdc&#43;&#43;.so.6 boost 源码下载 去 https://www.boost.org/ 下载对应版本的库。
 当前最新的版本是 boost_1_80_0 下载好了后运行以下脚本
 tar -xzf boost_1_80_0.tar.gz &amp;&amp; cd boost_1_80_0 ./bootstrap.sh 生成 b2，然后运行它
-./b2 -a &amp;&amp; ./b2 install 头文件会安装在 /usr/local/include 目录下 库文件会安装在 /usr/local/lib 目录下 查看版本，以及 lib 文件
-cat /usr/local/include/boost/version.hpp ll /usr/local/lib/libboost* 以上。"/>
+./b2 -a &amp;&amp; ."/>
 
 	
   </head>
@@ -163,29 +170,34 @@ cat /usr/local/include/boost/version.hpp ll /usr/local/lib/libboost* 以上。"/
 <h2 id="源码下载">源码下载</h2>
 <p>去 <a href="http://ftp.gnu.org/gnu/gcc/">http://ftp.gnu.org/gnu/gcc/</a> 下载最新版本的源码。<br>
 当前时间，最新的是 gcc-12.2.0 下载好了后运行以下脚本</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">tar -xzf gcc-12.2.0.tar.gz <span style="color:#f92672">&amp;&amp;</span> cd gcc-12.2.0
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">tar -xzf gcc-12.2.0.tar.gz <span style="color:#f92672">&amp;&amp;</span> cd gcc-12.2.0
 </code></pre></div><p>解压完毕后，需要下载依赖</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">contrib/download_prerequisites 
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">contrib/download_prerequisites 
 </code></pre></div><p>一切准备完毕后，生成编译环境，然后开始编译安装</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">./configure -disable-multilib
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">./configure -disable-multilib
 make -j<span style="color:#66d9ef">$(</span>nproc --all<span style="color:#66d9ef">)</span> <span style="color:#f92672">&amp;&amp;</span> make install
 </code></pre></div><p>然后重启机器，删除旧的版本。</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">apt remove gcc g++
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">apt remove gcc g++
 </code></pre></div><p>查看当前版本</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">gcc -v
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">gcc -v
 </code></pre></div><p>参考这篇<a href="https://blog.51cto.com/lhDream/4562126">文档</a></p>
-<h1 id="boost">boost</h1>
+<p>如果出现以下错误</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-cpp" data-lang="cpp"><span style="color:#f92672">:</span> <span style="color:#f92672">/</span>lib<span style="color:#f92672">/</span>x86_64<span style="color:#f92672">-</span>linux<span style="color:#f92672">-</span>gnu<span style="color:#f92672">/</span>libstdc<span style="color:#f92672">++</span>.so<span style="color:#ae81ff">.6</span><span style="color:#f92672">:</span> version <span style="color:#960050;background-color:#1e0010">`</span>GLIBCXX_3<span style="color:#ae81ff">.4.29</span><span style="color:#960050;background-color:#1e0010">&#39;</span> not found 
+</code></pre></div><p>请替换对应的 &ldquo;/lib/x86_64-linux-gnu/libstdc++.so.6&rdquo; 文件，文件在 &ldquo;/usr/local/lib64/libstdc++.so.6&rdquo;</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">rm /lib/x86_64-linux-gnu/libstdc++.so.6
+ln -s /usr/local/lib64/libstdc++.so.6 /lib/x86_64-linux-gnu/libstdc++.so.6
+</code></pre></div><h1 id="boost">boost</h1>
 <h2 id="源码下载-1">源码下载</h2>
 <p>去 <a href="https://www.boost.org/">https://www.boost.org/</a> 下载对应版本的库。<br>
 当前最新的版本是 boost_1_80_0 下载好了后运行以下脚本</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">tar -xzf boost_1_80_0.tar.gz <span style="color:#f92672">&amp;&amp;</span> cd boost_1_80_0
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">tar -xzf boost_1_80_0.tar.gz <span style="color:#f92672">&amp;&amp;</span> cd boost_1_80_0
 ./bootstrap.sh
 </code></pre></div><p>生成 b2，然后运行它</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">./b2 -a <span style="color:#f92672">&amp;&amp;</span> ./b2 install
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">./b2 -a <span style="color:#f92672">&amp;&amp;</span> ./b2 install
 </code></pre></div><p>头文件会安装在 /usr/local/include 目录下
 库文件会安装在 /usr/local/lib 目录下
 查看版本，以及 lib 文件</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">cat /usr/local/include/boost/version.hpp
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">cat /usr/local/include/boost/version.hpp
 ll /usr/local/lib/libboost*
 </code></pre></div><p>以上。</p>
 <ul class="pa0">

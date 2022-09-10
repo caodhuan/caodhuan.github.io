@@ -7,7 +7,7 @@
     <title>我的一些记录总结</title>
     <meta name="viewport" content="width=device-width,minimum-scale=1">
     <meta name="description" content="">
-    <meta name="generator" content="Hugo 0.92.2" />
+    <meta name="generator" content="Hugo 0.68.3" />
     
     
     
@@ -38,7 +38,7 @@
 <meta property="og:description" content="" />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="http://caodhuan.github.io/" />
-
+<meta property="og:updated_time" content="2022-08-11T20:24:14+08:00" />
 <meta itemprop="name" content="我的一些记录总结">
 <meta itemprop="description" content=""><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="我的一些记录总结"/>
@@ -182,11 +182,12 @@ contrib/download_prerequisites 一切准备完毕后，生成编译环境，然�
 ./configure -disable-multilib make -j$(nproc --all) &amp;&amp; make install 然后重启机器，删除旧的版本。
 apt remove gcc g++ 查看当前版本
 gcc -v 参考这篇文档
-boost 源码下载 去 https://www.boost.org/ 下载对应版本的库。
+如果出现以下错误
+: /lib/x86_64-linux-gnu/libstdc++.so.6: version `GLIBCXX_3.4.29&#39; not found 请替换对应的 &ldquo;/lib/x86_64-linux-gnu/libstdc++.so.6&rdquo; 文件，文件在 &ldquo;/usr/local/lib64/libstdc++.so.6&rdquo;
+rm /lib/x86_64-linux-gnu/libstdc++.so.6 ln -s /usr/local/lib64/libstdc++.so.6 /lib/x86_64-linux-gnu/libstdc++.so.6 boost 源码下载 去 https://www.boost.org/ 下载对应版本的库。
 当前最新的版本是 boost_1_80_0 下载好了后运行以下脚本
 tar -xzf boost_1_80_0.tar.gz &amp;&amp; cd boost_1_80_0 ./bootstrap.sh 生成 b2，然后运行它
-./b2 -a &amp;&amp; ./b2 install 头文件会安装在 /usr/local/include 目录下 库文件会安装在 /usr/local/lib 目录下 查看版本，以及 lib 文件
-cat /usr/local/include/boost/version.hpp ll /usr/local/lib/libboost* 以上。
+./b2 -a &amp;&amp; .
         </div>
           <a href="/post/install_boost/" class="ba b--moon-gray bg-light-gray br2 color-inherit dib f7 hover-bg-moon-gray link mt2 ph2 pv1">read more</a>
         
