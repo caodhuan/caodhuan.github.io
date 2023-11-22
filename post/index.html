@@ -7,7 +7,7 @@
     <title>我的一些记录总结</title>
     <meta name="viewport" content="width=device-width,minimum-scale=1">
     <meta name="description" content="">
-    <meta name="generator" content="Hugo 0.68.3" />
+    <meta name="generator" content="Hugo 0.118.2">
     
     
     
@@ -38,7 +38,6 @@
 <meta property="og:description" content="" />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="http://caodhuan.github.io/post/" />
-<meta property="og:updated_time" content="2022-08-26T20:29:46+08:00" />
 <meta itemprop="name" content="Posts">
 <meta itemprop="description" content=""><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Posts"/>
@@ -126,7 +125,7 @@ find_package(Boost 1.74.0 REQUIRED) 会生成
     </h1>
     <div class="nested-links f5 lh-copy nested-copy-line-height">
       boost::asio::io_context::run() asio 的 io_context 实例，在哪个线程调用 run，就会只在那个线程运行， 不管是阻塞还是非阻塞操作。async_read、async_write、post 等等，都是在调用 run 的线程来回调。
- The run() function blocks until all work has finished and there are no more handlers to be dispatched, or until the io_context has been stopped.
+The run() function blocks until all work has finished and there are no more handlers to be dispatched, or until the io_context has been stopped.
 Multiple threads may call the run() function to set up a pool of threads from which the io_context may execute handlers. All threads that are waiting in the pool are equivalent and the io_context may choose any one of them to invoke a handler.
     </div>
   </div>
@@ -211,23 +210,25 @@ tar -xzf boost_1_80_0.tar.gz &amp;&amp; cd boost_1_80_0 ./bootstrap.sh 生成 b2
     
     <h1 class="f3 near-black">
       <a href="/post/vscode-%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/" class="link black dim">
-        VScode c&#43;&#43; 环境搭建
+        VSCode c&#43;&#43; 环境搭建
       </a>
     </h1>
     <div class="nested-links f5 lh-copy nested-copy-line-height">
-      安装的插件有   CMake
+      安装的插件有 CMake
 现在习惯用 cmake 来搭建工程了
-  Doxygen Documentation Generator
+CMake Language Support
+我喜欢用 cmake 来管理工程，这个插件能补全 cmake 代码
+Doxygen Documentation Generator
 用来生成注释，在文件开头输入 /**，再按回车健，即会生成文件头注释。 在函数的上方输入 /**，会生成函数注释
-  One Dark Pro
+One Dark Pro
 漂亮的主题
-  Material Icon Theme
+Material Icon Theme
 这图标，爱了爱了
-  c/c++
+c/c++
 虽然 cpp-tools 进程会导致 cpu 占用高，但跳转功能真的是没法儿割舍
-由于 c/c++ 插件的默认搜索路径少了 /usr/include，会出现错误提示。 所以需要手工添加一下这个配置。   Clang-Format
-代码格式化，推荐 google 风格
-  安装的字体  JetBrains Mono  
+由于 c/c++ 插件的默认搜索路径少了 /usr/include，会出现错误提示。 所以需要手工添加一下这个配置。 Clang-Format
+代码格式化，推荐 google 风格 如果用 .clang-format 文件来指定格式，就得把配置中对应的格式化风格去掉，不然会覆盖文件所指定的格式。
+安装的字体 JetBrains Mono 由于该字体会连写一些操作符，所以需要设置 &#34;editor.fontLigatures&#34;: true, 
     </div>
   </div>
 
@@ -235,15 +236,13 @@ tar -xzf boost_1_80_0.tar.gz &amp;&amp; cd boost_1_80_0 ./bootstrap.sh 生成 b2
       
     </aside>
     
-
-
   </article>
 
     </main>
     <footer class="bg-black bottom-0 w-100 pa3" role="contentinfo">
   <div class="flex justify-between">
   <a class="f4 fw4 hover-white no-underline white-70 dn dib-ns pv2 ph3" href="http://caodhuan.github.io/" >
-    &copy;  我的一些记录总结 2022 
+    &copy;  我的一些记录总结 2023 
   </a>
     <div>
 <div class="ananke-socials">

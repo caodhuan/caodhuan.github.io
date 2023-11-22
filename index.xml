@@ -68,7 +68,7 @@ tar -xzf boost_1_80_0.tar.gz &amp;amp;&amp;amp; cd boost_1_80_0 ./bootstrap.sh �
     </item>
     
     <item>
-      <title>VScode c&#43;&#43; 环境搭建</title>
+      <title>VSCode c&#43;&#43; 环境搭建</title>
       <link>http://caodhuan.github.io/post/vscode-%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/</link>
       <pubDate>Sun, 21 Aug 2022 16:22:01 +0800</pubDate>
       
@@ -86,7 +86,7 @@ Material Icon Theme
 c/c++
 虽然 cpp-tools 进程会导致 cpu 占用高，但跳转功能真的是没法儿割舍
 由于 c/c++ 插件的默认搜索路径少了 /usr/include，会出现错误提示。 所以需要手工添加一下这个配置。 Clang-Format
-代码格式化，推荐 google 风格
+代码格式化，推荐 google 风格 如果用 .clang-format 文件来指定格式，就得把配置中对应的格式化风格去掉，不然会覆盖文件所指定的格式。
 安装的字体 JetBrains Mono 由于该字体会连写一些操作符，所以需要设置 &amp;#34;editor.fontLigatures&amp;#34;: true, </description>
     </item>
     
