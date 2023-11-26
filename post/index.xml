@@ -6,7 +6,16 @@
     <description>Recent content in Posts on 我的一些记录总结</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 22 Nov 2023 19:27:39 +0800</lastBuildDate><atom:link href="http://caodhuan.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 26 Nov 2023 18:06:40 +0800</lastBuildDate><atom:link href="http://caodhuan.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Git</title>
+      <link>http://caodhuan.github.io/post/git/</link>
+      <pubDate>Sun, 26 Nov 2023 18:06:40 +0800</pubDate>
+      
+      <guid>http://caodhuan.github.io/post/git/</guid>
+      <description>git 操作 1. 初始化仓库 git init 2. 查看当前仓库状态 git status 3. 提交代码 git add . git commit -m &amp;#34;commit message&amp;#34; 4. 回退本地修改 git restore 5. 拉取代码 git fetch git merge 6. 查看日志 git log 7. 检查更改 git blame &amp;#34;file name&amp;#34; 8. 查看分支 # 查看本地分支 git branch # 查看所有分支 git branch -vv # 切换分支 git switch branch name </description>
+    </item>
+    
     <item>
       <title>Clang Format</title>
       <link>http://caodhuan.github.io/post/clang-format/</link>
